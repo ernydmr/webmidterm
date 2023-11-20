@@ -1,0 +1,181 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bank Page</title>
+        <link rel="stylesheet" href="styles.css">   <!--reffering to css file -->
+    </head>
+
+<body>
+
+    <header>                                            <!--Header is top of the page it welcomes to user -->
+
+    <div class="leftside">                              <!-- dividing 2 header because i want to stay apart -->
+        <div class="miniBox"><p>SECURE BANKING</p></div>                    <!--This boxes are makes our sites responsive  -->
+        <div class="miniBox"><img src="images/money.svg" alt=""></div>      <!--They have limits and rates for each weight -->
+    </div>
+ 
+    <div class="rightside">                                 <!--right side of header -->
+        <p>Modern Banking. Lasting Relationships</p>
+    </div>
+    </header>
+        <!-- sidebars are left and right side of code in here we can see informations about exhange rate--> 
+    <div class="sidebar">                           <!-- Left sidebar-->
+                                                                    
+
+        <div class="box">                                   <!--First im opening a box and this boxes arranged from top to bottom-->
+            <div class="miniBox">                       <!--And mini boxes are divided to our box 2 and arrange from left to right -->
+                <img src="images/dollar.svg" alt="usd">
+            </div>
+            
+            <div class="miniBox"><p>30.00₺</p></div>
+        </div>
+        
+        <div class="box">
+            <div class="miniBox">
+                <img src="images/euro.svg" alt="euro">
+            </div>
+            <div class="miniBox">
+                <p>31.24₺</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="miniBox">
+                <img src="images/bitcoin.svg" alt="btc">
+            </div>
+            <div class="miniBox">
+                <p>36143$</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="miniBox">
+                <img src="images/ethereum.svg" alt="eth">
+            </div>
+            <div class="miniBox">
+                <p>2000$</p></div>
+        </div>
+
+        <div class="box">
+            <div class="miniBox">
+                <img src="images/thy.png" alt="thy"></div>
+            <div class="miniBox"><p>254.25₺</p></div>
+        </div>
+    </div>
+
+    <div class="content">                                   <!-- This is main content and middle of the page -->
+                                                            <!-- in here we can see our cards and banks announcements -->
+        <div class="box">
+            <h1>WELCOME TO CENG BANK</h1>
+        </div>
+        
+        
+
+        <div class="contents">                             <!-- Contents are have title and content-->
+            <h1>EXCHANGE</h1>
+            <p>You can exchange which pair do you want easily.</p>
+        </div>
+
+        <div class="contents">
+            <h1>CRYPTO</h1>
+            <p>You can buy-sell crypto easily.</p>
+        </div>
+
+        <div class="contents">
+            <h1>TRANSFER</h1>
+            <p>Easy to transfer evereywhere. Just one click.</p>
+        </div>
+
+        <div class="contents">
+            <h1>NEWS</h1>
+            <p>Next year we will update our database.</p>
+        </div>
+
+        <div class="box"><h1>MY CARDS</h1></div>                
+        <div class="cards">                                <!-- In the cards div cards comes side by side-->
+            <img src="images/bluecard.png" alt="">
+            <img src="images/redcard.png" alt="">
+        </div>
+
+        <div class="contents">
+
+        <h1>Contact US</h1>
+
+    <form action="#" method="POST">          <!--In the form we write some information and with "post" method send to to "action"-->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Name" required>   <!-- required means we have to fill this form before send -->
+
+        <label for="surname">Surname:</label>
+        <input type="text" id="surname" name="surname" placeholder="Surnameame" required> <!--type is about input in the text mode its regular text -->
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="E-mail" required>   <!--id for css and js, name is for php querys -->
+        
+        <div class="box">
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>       <!--rows=4 mean it is minimum 4 rows -->
+          <button type="submit">Gönder</button>                                  <!-- height it can be higher according to text-->
+        </div>
+
+    </form>
+</div>
+
+    </div>
+
+    <div class="sidebar">                                   <!--Right sidebar-->
+
+        <div class="bigBox">                          <!-- I created also bigBox div because in the left side photo and paragraphs -->
+            <div class="box">                         <!-- are in same line but in the right side i need photo on up paragraphs below -->
+                <img src="images/user.svg" alt="">
+            </div>
+            <div class="box">                         <!-- Also in the this big boxes i put boxes because of responsivity-->
+                <p>Faik Eren Aydemir</p>
+                <p>Muğla</p>
+                <p>Öğrenci</p>
+            </div>
+        </div>
+
+        <div class="bigBox">
+            <div class="box">
+                <img src="images/wallet.svg" alt="">
+            </div>
+            <div class="box">
+                <p>BALANCE: 20.000₺</p>
+            </div>
+        </div>
+
+        <div class="bigBox">
+            <p>Recent Transactions</p>
+            <div class="trans">                 <!--Transactions are need border so i create new div fort  -->                        
+                <p>-10000₺ STOCK BUYING</p>
+            </div>
+            <div class="trans">
+                <p>+22000₺ EXCHANGING</p>
+            </div>
+            <div class="trans">
+                <p>-700₺ TRANSFER</p>
+            </div>
+            <div class="trans">
+                <p>-250₺ PAYING BILL</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>                                    <!--This is footer of my page in this part we can see links.-->
+        <div class="box">
+            <a href="#">Main Page</a>
+            <a href="#">Info</a>
+        </div>
+        <div class="box">
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="box">
+           <a href="#">Linkedin</a>
+           <a href="#">Twitter</a>
+        </div>
+    </footer>
+</body>
+</html>

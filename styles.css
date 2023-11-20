@@ -1,0 +1,211 @@
+body {
+    display: flex;            /* I prefer flex display for responsivity. */                                 
+    margin: 0;
+    flex-wrap: wrap;          /* flex-wrap is about wrapping if contents is too much for screen wrap is let it tab */
+    height: 100vh;            /* i give vh because viewport height is return value with screen size  */
+    background-color: #D0D4CA;
+
+}
+
+header {
+    height: 10vh;
+    width: 100%;
+    background-color: #A7D397;
+    color: #fff;
+    font-weight: bold;          /* It makes bolder to our letters */
+    display: flex;
+    justify-content: space-between; /* justify content is about aligning horizontal space between makes equal spaces between contents */
+    align-items: center;                /* aliging items in vertical */
+}
+header img {
+    max-height: 100%;                   /* max-height sets images maximum height and they dont exceed container */
+    width: auto;
+    margin : 1%;  
+}
+header .leftside{
+    display: flex;
+    justify-content: flex-start;    /*  It starts content from top left*/
+    height: 100%;
+}
+
+header .rightside{
+    display: flex;
+    height: 100%;
+    justify-content: flex-end;      /* flex-end sent to content most right */
+    font-size: 1.5em;               
+}
+header .miniBox{
+    margin-top: 1vh;
+    height: 80%;
+    width: 8vw;
+
+}
+
+
+.sidebar{
+    display: flex;
+    flex: 1;                /* the area kept on the screen is one part of all flex addition */
+    flex-direction: column;      /* it align to items top to down as column  */
+    text-align: center;
+    justify-content:space-around;
+    height: 100%;
+    background-image: url(images/sidebarbg.png);             /*i put an image for background */
+    background-position: center;                             /*put center of the background image */
+    font-size: 1.6em;
+    font-weight: bold;                                       /*make bolder to letters*/
+
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    height: 130vh;
+    overflow-y: auto;            /* if my content is long for page this will add a scroll for content container */
+    overflow-x: hidden;
+    background-image: url(images/background.jpg);
+    opacity: 0.5;               /* opacity will makes transperent background color */
+    color:#fff;
+    font-weight:900;
+}
+.content .contents{
+    text-align: center;
+    font-weight: 500%;
+    margin: 4%;
+    opacity: 1;
+}
+.box{                           /* box are makes my web page responisve */
+    display: flex;        
+    width: 80%;
+    height: 15vh;
+    margin: 0 20px;
+}
+.miniBox{                           /* mini boxes used for juxtaposition photos and paragraphs in side bar */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 15vh;
+    margin: 0 20px;
+
+}
+
+.box img{
+    height: 80%;
+    width: auto;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.bigBox{                /* I used big box for right sidebar  */ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;        /* In the right side i needed thicker boxes */
+    height: 25vh;
+    margin: 0 20px;
+    align-items: center;
+}
+
+.bigBox .box{
+    justify-content: center;
+    height: 50%;
+    display: block;
+}
+
+.trans{                 /* i created container for transactions because they need border */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    height: 10%;
+    margin-bottom: 1vh;
+    font-size: 0.5em;
+    border: 2px solid #555843;  
+}
+
+.content .box{
+    width: 100%;            /* in the main page i want full width for contents*/
+    margin: 0;
+    text-align:center;
+    flex-direction: column;
+}
+.content .box h1{
+    overflow:hidden;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row; 
+}
+.cards img{
+    width: 40%;
+}
+
+footer {                /* footer is relative because i always want in most bottom*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #555843;
+    color: #fff;
+    text-align: center;
+    position: relative;   
+    bottom: 0;
+    width: 100%;
+}
+footer .box{
+    flex-direction: column;
+
+}
+footer a{
+    text-align: center;
+    font-size: 2em;
+    color: #A7D397;
+    
+}
+
+
+@media only screen and (max-width: 768px) {     /* If width less than 768px (tablets) this features works*/
+
+    body {
+        font-size: 10px;
+    }   
+}
+
+
+@media only screen and (max-width: 425px) {     /* If width less than 425(mobile phones) this features works*/
+    body {
+        font-size: 8px;
+        display: block;                         /* In the mobile version i want block displaying because in flex everything*/
+    }                                                                       /* is intertwined */
+
+}
+
+form {                              /* Im giving to margin for get center to form padding for spaces between elements */
+    max-width: 60%;                 /* radius for round shapes and shadow for shadow effect */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {                          /* Choosing to text and email types and give features to them */
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+  
